@@ -17,10 +17,12 @@ class CreateBooksTable extends Migration
             $table->bigIncrements('id_book');
             $table->string('books_title', 30);
             $table->year('release_year');
-            $table->foreign('book_autor')->references('id_autor')->on('id_autor');
-            $table->foreign('book_genre')->references('id_genre')->on('id_genre');
-            $table->foreign('book_publisher')->references('id_publisher')->on('id_publisher');
-
+            $table->unsignedBigInteger('book_autor');
+            $table->unsignedBigInteger('book_genre');
+            $table->unsignedBigInteger('book_publisher');
+            $table->foreign('book_autor')->references('id_autor')->on('autors');
+            $table->foreign('book_genre')->references('id_genre')->on('genres');
+            $table->foreign('book_publisher')->references('id_publisher')->on('publishers');
         });
     }
 
