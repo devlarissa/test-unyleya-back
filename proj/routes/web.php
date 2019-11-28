@@ -37,3 +37,7 @@ Route::get('/book/{id}','BookController@show');
 Route::post('/book','BookController@store');
 Route::put('/book/{id}','BookController@update');
 Route::delete('/book/{id}','BookrController@destroy');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
