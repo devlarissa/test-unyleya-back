@@ -14,8 +14,9 @@ class CreatePublishersTable extends Migration
     public function up()
     {
         Schema::create('publishers', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->bigIncrements('id_publisher');
+            $table->string('publisher_name', 30);
+
         });
     }
 
