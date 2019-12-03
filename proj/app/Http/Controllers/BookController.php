@@ -29,7 +29,7 @@ class BookController extends Controller
     {
         $book = new Book;
         //requisao para criar novos autores
-        $book->books_title = $request->books_title;
+        $book->book_title = $request->book_title;
         $book->release_year = $request->release_year;
         $book->id_genre = $request->id_genre;
         $book->id_publisher = $request->id_publisher;
@@ -64,7 +64,7 @@ class BookController extends Controller
     {
         $book = Book::find($id);
         //requisao para criar novos autores
-        $book->books_title = $request->books_title;
+        $book->book_title = $request->book_title;
         $book->release_year = $request->release_year;
         $book->id_genre = $request->id_genre;
         $book->id_publisher = $request->id_publisher;

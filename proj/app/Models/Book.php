@@ -9,7 +9,7 @@ class Book extends Model
     public $timestamps = true;
     public $primaryKey= "id_book";
     protected $fillable = [
-        'books_title','release_year','id_autor','id_genre','id_publisher'
+        'book_title','release_year','id_autor','id_genre','id_publisher'
     ];
 }
 
