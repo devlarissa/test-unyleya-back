@@ -36,7 +36,7 @@ Route::get('/book','BookController@index');
 Route::get('/book/{id}','BookController@show');
 Route::post('/book','BookController@store');
 Route::put('/book/{id}','BookController@update');
-Route::delete('/book/{id}','BookrController@destroy');
+Route::delete('/book/{id}','BookController@destroy');
 
 Auth::routes();
 

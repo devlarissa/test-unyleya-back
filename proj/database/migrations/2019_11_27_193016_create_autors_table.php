@@ -16,9 +16,10 @@ class CreateAutorsTable extends Migration
         Schema::create('autors', function (Blueprint $table) {
             $table->bigIncrements('id_autor');
             $table->string('autor_name', 30);
-            $table->date('date_birth',);
+            $table->year('date_birth');
             $table->enum('sex_genre',['Female', 'Male', 'other'] );
             $table->string('nationality', 30);
+            $table->timestamps();
         });
     }
 
@@ -28,7 +29,7 @@ class CreateAutorsTable extends Migration
      * @return void
      */
     public function down()
-    {
+{
         Schema::dropIfExists('autors');
     }
 }

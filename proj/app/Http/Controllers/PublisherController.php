@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Publusher;
+use App\Models\Publisher;
 
 use Illuminate\Http\Request;
 
