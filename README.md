@@ -20,8 +20,11 @@ Use [http://localhost:3000](http://localhost:3000) para visualizar a aplicação
 Projeto Back-end criado em PHP, usando a framework Laravel e o banco de dados MySql.
 Para o funcionamento da API/Banco de dados e necessario rodar um ambiente de desenvolvimento php, no caso nesse projeto foi usado o xampp (https://www.apachefriends.org/pt_br/index.html), ligando o apache e o MySql.
 Para instalação do laravel é necessario o composer
+
 instalar o composer na maquina, comando: composer install
+
 Instalando o laravel com o comando - composer global require laravel/installer
+
  https://laravel.com/docs/6.x -> guia para instalação
 Inicei o xampp e de start nas opções Apache e MySql
 Para acesso direto ao banco de dados http://localhost/phpmyadmin
@@ -30,6 +33,8 @@ Na pasta clonada do back-end use o $php artisan, o comando para inciar o projeto
 php artisan serve
 
 Após todos os passos a aplicação aberta no navegador http://localhost:3000 estara pronta para uso e comunicação com o banco de dados.
+
+#OBSERVAÇÃO# Caso rode o laravel em portas diferentes, configurar no front a url base no arquivo api.js
 
 Impende salientar que existem files no projeto que foram montados, mas não finalizados, com o intuito de um gerenciador completo que não estão sendo executadas no fluxo principal devido ao tempo de entrega, porém visando o aprendizado será algo ainda a ser feito.
 
